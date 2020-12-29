@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+/* reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    color: #2199df;
+    text-decoration: unset;
+}
+ul {
+    margin-left: 1.5em;
+    list-style: none;
+}
+button, input[type="submit"]{
+    border: none;
+    background: none;
+    color: unset;
+    cursor: pointer;
+}
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+    margin: 1em;
+}
+/*general*/
+body {
+        font-family:  "Roboto", sans-serif;
+}
+
+/*header*/
+#header {
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #280b31;
+    display: flex;       
+}
+#header .title {
+    margin: 0;
+    color: #ffffff;
+    padding: 0.1rem;
+}
+
+#header .auth-options {
+    display: flex;
+    height: 100%;  
+}
+#header .auth-options button{
+    padding: 1.1rem;
+    background-color: bisque;
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+#header .auth-options button:hover{
+    background-color: rgb(158, 147, 134);
+    
+}
+.page {
+    padding: 0.5rem;
+
+}
+.container {
+    margin:0 auto;
+    max-width: 900px;
+}
+.form input:focus{
+    border: 1px solid #268ee4;
+    box-shadow: inset 0px 0px 10px rgb(38, 142, 228, 0.5);
+    outline: none;
+}
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"]{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    border: 1px solid #c2c2c2;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+}
+.form label,
+.form input{
+    display: block;
+
+}
+.form input {
+    margin-bottom: 1rem;
+}
+.form input[type="submit"]{
+    padding: 0.3rem 0.5rem;
+    border: 1px solid #6aa051;
+    background-color: #bce4aa;
+    font-size: 1.1rem;
+    border-radius: 8px;
+}
+
+/*error Notice*/
+
+.error-notice {
+    margin: 1rem 0;
+    padding: 0.5rem;
+    border: 1px solid rgb(218, 29, 29);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color: #f8d6d6;
+
+}  
+.error-notice button{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #df4343;
+   
+    color: #ffffff;
+}
